@@ -6,12 +6,12 @@
           <h2>Inscription</h2>
         </div>
         <form action="">
-          <input type="text" v-model="newUser.email" placeholder="email" />
-          <input type="text" v-model="newUser.password" placeholder="password" />
-          <input type="text" v-model="newUser.age" placeholder="age" />
+          <input type="text" v-model="newUser.email" placeholder="adresse mail" />
+          <input type="text" v-model="newUser.password" placeholder="mot de passe" />
+          <input type="text" v-model="newUser.age" placeholder="âge" />
           <select v-model="newUser.status">
-            <option value="locataire">locataire</option>
-            <option value="proprietaire">propriétaire</option>
+            <option value="entreprise">Entreprise</option>
+            <option value="particulier">Particulier</option>
           </select>
           <button @click="addUser(newUser)">S'enregistrer</button>
         </form>
@@ -49,19 +49,22 @@ h2 {
   font-family: "Indie Flower", cursive;
   text-align: center;
   font-size: 3rem;
-  color: darkslategrey;
+  color: white;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: top;
-  margin: 50px;
 }
 
 .card {
   padding: 30px;
   min-width: 50rem;
+  margin-top: 200px;
+  background: #918e9b;
+  border-radius: 30px;
+  border: 2px solid grey
 }
 
 form {
@@ -80,22 +83,25 @@ input {
   background-color: none;
 }
 
+::placeholder {
+    color : white;
+    font-size: 15px;
+}
+
 button {
   max-width: 8rem;
   border-radius: 20px;
   padding: 5px 15px;
-  background-color: darkslategrey;
-  color: antiquewhite;
-
+  background-color: dimgray;
+  color: white;
+  border: 2px solid white;
   font-size: 14px;
-
-  border: none;
   margin: 20px;
 }
 
 .redirection {
   display: block;
-  color: darkslategrey;
+  color:white;
   text-decoration: none;
   margin-bottom: 5px;
 }
@@ -109,7 +115,7 @@ button {
   display: block;
   width: 191px;
   height: 5px;
-  background: rgb(197, 118, 72);
+  background: white;
 }
 
 

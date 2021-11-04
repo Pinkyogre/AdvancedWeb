@@ -6,8 +6,8 @@
           <h2>Connexion</h2>
         </div>
         <form action="">
-          <input type="text" v-model="user.email" placeholder="email" />
-          <input type="text" v-model="user.password" placeholder="password" />
+          <input type="text" v-model="user.email" placeholder="adresse mail" />
+          <input type="text" v-model="user.password" placeholder="mot de passe" />
           <button type="button" @click="login(user)">Se connecter</button>
         </form>
         <router-link class="redirection" to="/register"
@@ -43,7 +43,7 @@ h2 {
   font-family: "Indie Flower", cursive;
   text-align: center;
   font-size: 3rem;
-  color: darkslategrey;
+  color: white;
 }
 
 article {
@@ -59,9 +59,12 @@ article {
 .card {
   padding: 30px;
   min-width: 50rem;
-  margin-top: 50px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
+  background: #918e9b;
+  border-radius: 30px;
+  border: 2px solid grey
 }
 
 form {
@@ -70,21 +73,35 @@ form {
   align-items: center;
 }
 
+input {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  margin: 10px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: none;
+}
+
+::placeholder {
+    color : white;
+    font-size: 15px;
+}
+
+
 button {
   max-width: 8rem;
   border-radius: 20px;
   padding: 5px 15px;
-  background-color: darkslategrey;
-  color: antiquewhite;
-
+  background-color: dimgray;
+  color: white;
+  border: 2px solid white;
   font-size: 14px;
-  
-  border: none;
   margin: 20px;
 }
 .redirection {
   display: block;
-  color: darkslategrey;
+  color: white;
   text-decoration: none;
   margin-bottom: 5px;
 }
@@ -98,6 +115,6 @@ button {
   display: block;
   width: 187px;
   height: 5px;
-  background: rgb(197, 118, 72);
+  background: white;
 }
 </style>
