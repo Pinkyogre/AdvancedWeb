@@ -39,6 +39,9 @@ module.exports = {
 </script>
 
 <style scoped>
+
+
+
 h2 {
   font-family: "Indie Flower", cursive;
   text-align: center;
