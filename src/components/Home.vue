@@ -27,7 +27,7 @@
 .layout{
     background-image : url("../assets/img/car1jpg.jpg");
     width: 100%;
-    height: 1000px;
+    height: 1940px;
     background-size: cover;
     /*clip-path: polygon(100% 0, 0 100%, 100% 100%);*/
 }

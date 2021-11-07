@@ -1,5 +1,6 @@
 <template>
-<div class="home-container">
+  <section class ="layout">
+    <div class="home-container">
       <h1></h1>
 
 
@@ -62,6 +63,7 @@
           </div>
         </transition>
       </div>
+  </section>
 </template>
 
 <script>
@@ -139,5 +141,14 @@ export default {
 </script>
 
 <style scoped>
+
+.layout{
+    background-image : url("https://img3.wallspic.com/originals/7/0/6/6/36607-voiture_de_famille-voiture-executif_de_voiture-voiture_de_luxe_personnels-3000x2000.jpg?attachment=1");
+    width: 100%;
+    height: 1940px;
+    background-size: cover;
+    /*clip-path: polygon(100% 0, 0 100%, 100% 100%);*/
+}
+
 
 </style>
