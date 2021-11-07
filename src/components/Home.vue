@@ -2,7 +2,7 @@
   <section class="layout">
     <div class="card">
         <h1>AutoCart</h1>
-        <p>Le site n°1 de vente de voitures de luxe !</p>
+        <p>Le site n°1 de vente de voitures de luxe!</p>
         <h2><router-link to="/cars-list">Trouvez votre future voiture de luxe !</router-link></h2>
     
             
