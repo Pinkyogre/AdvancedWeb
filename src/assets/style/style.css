@@ -36,7 +36,7 @@ button {
 
 nav {
   padding: 0.8rem 2.4rem;
-  background: #918e9b;
+  background: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -112,6 +112,11 @@ nav .nav-container #icons i:hover {
   outline: none;
   border: 2px solid #333;
 }
+
+.card-cart-container {
+  margin-top: 100px;
+}
+
 .home-container .card-cart-container {
   display: flex;
 }

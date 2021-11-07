@@ -62,7 +62,7 @@ h2 {
   padding: 30px;
   min-width: 50rem;
   margin-top: 200px;
-  background: #918e9b;
+  background: #ffffff;
   border-radius: 30px;
   border: 2px solid grey
 }

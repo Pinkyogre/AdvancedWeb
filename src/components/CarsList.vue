@@ -133,13 +133,15 @@ export default {
           return this.cart[i].quantity++
         }
       }
-      this.cart.push({
+      const newArticle = {
         id: product.id,
         img: product.img,
         description: product.description,
         price: product.price,
         quantity: 1
-      })
+      }
+      this.cart.push(newArticle)
+      this.$emit('addarticle', newArticle);
     },
     cartPlusOne(product){
       product.quantity = product.quantity + 1;
