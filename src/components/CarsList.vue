@@ -1,4 +1,5 @@
 <template>
+<section class="layout">
     <div class="home-container">
       <h1>Articles</h1>
 
@@ -89,6 +90,7 @@
         </transition>
       </div>
     </div>
+    </section>
 </template>
 
 <script>
@@ -133,13 +135,15 @@ export default {
           return this.cart[i].quantity++
         }
       }
-      this.cart.push({
+      const newArticle = {
         id: product.id,
         img: product.img,
         description: product.description,
         price: product.price,
         quantity: 1
-      })
+      }
+      this.cart.push(newArticle)
+      this.$emit('addarticle', newArticle);
     },
     cartPlusOne(product){
       product.quantity = product.quantity + 1;
@@ -159,5 +163,18 @@ export default {
 </script>
 
 <style scoped>
+
+.layout{
+    background-image : url("https://www.wallpapertip.com/wmimgs/57-574665_hd-wallpaper-car-ferrari-yellow.jpg");
+    width: 100%;
+    height: 1940px;
+    background-size: cover;
+    /*clip-path: polygon(100% 0, 0 100%, 100% 100%);*/
+}
+
+h1 {
+  color : whitesmoke;
+}
+
 
 </style>

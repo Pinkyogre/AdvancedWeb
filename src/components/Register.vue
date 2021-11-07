@@ -45,6 +45,14 @@ module.exports = {
 </script>
 
 <style scoped>
+.layout{
+    background-image : url("https://www.wallpaperuse.com/wallp/7-79411_m.png");
+    width: 100%;
+    height: 1940px;
+    background-size: cover;
+    /*clip-path: polygon(100% 0, 0 100%, 100% 100%);*/
+}
+
 h2 {
   font-family: "Indie Flower", cursive;
   text-align: center;

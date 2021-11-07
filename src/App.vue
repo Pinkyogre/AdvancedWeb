@@ -4,7 +4,7 @@
       <div class="nav-container">
         <div id="logo">
           <router-link to="/">
-            <img src="./assets/img/Auto_cart_logo.jpeg" alt="logo" />
+            <img src="./assets/img/logo.jpg" alt="logo" />
           </router-link>
         </div>
 
@@ -30,7 +30,13 @@
 
 
 
-    <router-view></router-view>
+    <router-view 
+    :articles="articles"
+    @addarticle="addArticle"
+    @articleminusone="cartMinusOne"
+    @articleplusone="cartPlusOne"
+    @cartremoveitem="cartRemoveItem"
+    ></router-view>
   </div>
 </template>
 
@@ -41,6 +47,37 @@ export default {
   name: 'App',
   components: {
 
+  },
+  data: () => {
+    return {
+      articles: []
+    }
+
+  },
+
+  methods: {
+    addArticle(e) {
+      this.articles.push(e);
+      console.log(this.articles)
+    },
+    cartMinusOne(id){
+      let index = this.articles.findIndex(e => {e.id == id});
+      if (this.articles[index].quantity == 1) {
+        this.cartRemoveItem(id);
+      } else {
+        
+        this.articles[index].quantity--;
+
+      }
+    },
+    cartPlusOne(id){
+      let index = this.articles.findIndex(e => {e.id == id});
+      this.articles[index].quantity++;
+    },
+     cartRemoveItem(id){
+      let index = this.articles.findIndex(e => {e.id == id});
+      this.articles.splice(index,1);
+    }
   }
 }
 </script>

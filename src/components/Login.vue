@@ -39,7 +39,13 @@ module.exports = {
 </script>
 
 <style scoped>
-
+.layout{
+    background-image : url("https://s1.1zoom.me/big3/448/Mazda_2016_Mazda_6Silver_442155.jpg");
+    width: 100%;
+    height: 1940px;
+    background-size: cover;
+    /*clip-path: polygon(100% 0, 0 100%, 100% 100%);*/
+}
 
 
 h2 {
