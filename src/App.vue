@@ -19,6 +19,11 @@
               <i class="fas fa-shopping-cart"></i>
             </router-link>
           </li>
+          <li>
+            <router-link to="/login">
+              <img src="./assets/img/Deconnexion.png" alt="logo" />
+            </router-link>
+          </li>
         </ul>
       </div>
     </nav>

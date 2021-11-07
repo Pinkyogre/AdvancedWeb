@@ -1,6 +1,10 @@
 <template>
   <div>
+<<<<<<< HEAD
     shoppingCart TEST ANTOINE
+=======
+    shoppingCart TESTNISHANTH
+>>>>>>> Nishanth
   </div>
 </template>
 
