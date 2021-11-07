@@ -1,6 +1,6 @@
 <template>
   <div>
-    shoppingCart TESTNISHANTH
+    shoppingCart TEST ANTOINE
   </div>
 </template>
 
